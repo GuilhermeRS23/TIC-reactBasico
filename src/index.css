@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+:root {
+  --cor-fundo: #eef5ff;
+  --cor-primaria: #071952;
+  --cor-secundaria: #088395;
+  --cor-terciaria: #35a29f;
+  --cor-quartenaria: #f2f7a1;
+  --fonte: "Anta" ,'sans-serif';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: var(--fonte);
+}

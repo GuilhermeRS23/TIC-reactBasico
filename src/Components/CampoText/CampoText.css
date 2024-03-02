@@ -1,0 +1,5 @@
+.campoText {
+    border: 2px solid var(--cor-secundaria);
+    width: 25rem;
+    padding: 0.25rem 0.75rem;
+}

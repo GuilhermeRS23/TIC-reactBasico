@@ -1,0 +1,12 @@
+.conteudo{
+    padding: 0.5rem 1.5rem 1rem;
+    color: var(--cor-primaria);
+}
+
+.conteudo h2 {
+    margin-bottom: 1rem;
+}
+
+.conteudo p {
+    color: var(--cor-secundaria);
+}

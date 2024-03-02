@@ -1,0 +1,15 @@
+.botao {
+    background-color: var(--cor-terciaria);
+   border: 2px solid var(--cor-secundaria);
+   padding: 0.25rem 0.75rem;
+   margin-left: 0.25rem;
+   color: var(--cor-primaria); 
+}
+
+.botao[tipo="primario"]{
+    background-color: var(--cor-terciaria);
+}
+
+.botao[tipo="secundario"]{
+    background-color: var(--cor-quartenaria);
+}

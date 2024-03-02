@@ -1,0 +1,10 @@
+.rodape {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
