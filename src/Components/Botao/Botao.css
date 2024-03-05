@@ -4,6 +4,7 @@
    padding: 0.25rem 0.75rem;
    margin-left: 0.25rem;
    color: var(--cor-primaria); 
+   cursor: pointer;
 }
 
 .botao[tipo="primario"]{

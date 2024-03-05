@@ -3,6 +3,7 @@ import { ListaTarefas } from "../../Components/ListaTarefas";
 import "./Inicial.css"
 
 const Inicial = () => {
+
   return (
     <div className="inicial">
       <FormCriarTarefa />

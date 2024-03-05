@@ -10,7 +10,7 @@ const Router = () => {
             <Route path='/' element={<LayoutPadrao />}>
                 <Route path='/' element={<Inicial />} />
                 <Route path='/sobreNos' element={<SobreNos />} />
-                <Route path='*' element={<Erro404 />} />
+                <Route path='*' element={<Erro404 />} /> 
             </Route>
         </Routes>
     )
