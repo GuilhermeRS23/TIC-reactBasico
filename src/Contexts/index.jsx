@@ -36,12 +36,28 @@ setTarefas(estadoAtual => {
 })
     };
 
+    const editarTarefa = (idTarefa, nomeTarefa) => {
+        setTarefas(estadoAtual => {
+            const tarefasAtualizadas = estadoAtual.map(tarefa =>{
+                return tarefa.id == idTarefa ? {
+                ...tarefa,
+                nomeTarefa: nomeTarefa
+                } : tarefa;
+            })
+
+            return [
+                ...tarefasAtualizadas
+            ]
+        });
+    };
+
     return (
         <AppContext.Provider value={{
             autor,
             tarefas,
             adicionarTarefa,
-            removerTarefa
+            removerTarefa,
+            editarTarefa
         }}>
             {children}
         </AppContext.Provider>
