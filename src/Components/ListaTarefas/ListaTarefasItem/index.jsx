@@ -9,16 +9,22 @@ const ListaTarefasItem = ({ id, nomeTarefa }) => {
     const { removerTarefa, editarTarefa } = useAppContext();
     const [editando, setEditando] = useState(false);
 
+    const onBlurTarefa = (event) => {
+        const nomeTarefa = event.currentTarget.value;
+        editarTarefa(id, nomeTarefa);
+        setEditando(false);
+    };
+
     return (
-        <li className="listaTarefasItem"> 
+        <li className="listaTarefasItem">
             {editando && (
-                <CampoText defaultValue ={nomeTarefa} 
-                onChange={event => editarTarefa(id, event.currentTarget.value)}
-                onBlur={() =>setEditando(false)} autoFocus/>
+                <CampoText defaultValue={nomeTarefa}
+                    onBlur={onBlurTarefa}
+                    autoFocus />
             )}
 
             {!editando && (
-                <span onDoubleClick={() =>setEditando(true)} >{nomeTarefa}</span>
+                <span onDoubleClick={() => setEditando(true)} >{nomeTarefa}</span>
             )}
 
             <Botao texto="-" tipo={TIPO_BOTAO.SECUNDARIO}
